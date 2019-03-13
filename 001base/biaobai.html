@@ -1,1 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>kkk</title>
+    <style type="text/css">
+        body{
+            background-image: url(./images/1.jpg);
+            background-size:100% 100% ;
+            height: 100%;
+        }
+        html{
+            height: 100%;
+        }
+      /*  @keyframes myfirst{               给h1标题从红变绿1秒的时间变化
+             from {background: red;}
+             to {background: green;}
+         }
+        h1{
+            animation:myfirst 2s;
+        }                                 */
 
+        @keyframes myfirst{  /* keyframes的名字叫Myfirst  */
+        from {opacity:0}  /*  它从开始的时候从不透明度是0*/
+        to {opacity:100}    /*  它从结束的时候从不透明度是100*/
+        }
+        h1,p{
+            animation:myfirst 2s infinite;  /* 应用在h1 p元素上  并且不断循环 */
+        }
+    </style>
+</head>
+<body>
+<audio src="wav/bgm.mp3" controls="controls" autoplay="autoplay">  /* 在网页上插入音乐 autoplay="autoplay"=是让他自动播放音乐 */
+</audio>
+<h1>静夜思</h1>
+<p>床前明月光,</p>
+<p>疑是地上霜。</p>
+<p>举头望明月，</p>
+<p>低头思故乡。</p>
+</body>
+</html>
