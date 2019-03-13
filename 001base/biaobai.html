@@ -12,27 +12,36 @@
         html{
             height: 100%;
         }
-      /*  @keyframes myfirst{               给h1标题从红变绿1秒的时间变化
-             from {background: red;}
-             to {background: green;}
-         }
-        h1{
-            animation:myfirst 2s;
-        }                                 */
-
-        @keyframes myfirst{  /* keyframes的名字叫Myfirst  */
-        from {opacity:0}  /*  它从开始的时候从不透明度是0*/
-        to {opacity:100}    /*  它从结束的时候从不透明度是100*/
+        @keyframes myfirst{
+            0% {opacity: 0}
+            25% {opacity: 100}
+            50% {opacity: 0}
+            100% {opacity: 0}
+        }
+        @keyframes mysecond{
+            0% {opacity: 0}
+            50% {opacity: 0}
+            75% {opacity: 100}
+            100% {opacity: 0}
         }
         p{
+            font-size: 100px; /*字体的大小*/
+            position: absolute; /* 位置*/
+            width: 100%;
+            text-align: center; /*字体居中*/
+        }
+        #buzhi{
             animation:myfirst 2s infinite;  /* 应用在h1 p元素上  并且不断循环 */
+        }
+        #zhengbuzhi{
+            animation:mysecond 2s infinite;  /* 应用在h1 p元素上  并且不断循环 */
         }
     </style>
 </head>
 <body>
-<audio src="wav/bgm.mp3" controls="controls" autoplay="autoplay">  /* 在网页上插入音乐 autoplay="autoplay"=是让他自动播放音乐 */
+<audio src="wav/bgm.mp3"  autoplay="autoplay" loop="loop">  /* 在网页上插入音乐 autoplay="autoplay"=是让他自动播放音乐 loop让音乐不断循环播放*/
 </audio>
-<p>我不知歌词,</p>
-<p>我真的不知道歌词。</p>
+<p id="buzhi">我不知歌词,</p>
+<p id="zhengbuzhi">我真的不知道歌词。</p>
 </body>
 </html>
