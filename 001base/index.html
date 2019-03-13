@@ -12,9 +12,23 @@
         html{
             height: 100%;
         }
+      /*  @keyframes myfirst{               给h1标题从红变绿1秒的时间变化
+             from {background: red;}
+             to {background: green;}
+         }
+        h1{
+            animation:myfirst 2s;
+        }                                 */
+
+        @keyframes myfirst{
+        from {opacity:0}
+        to {opacity:100}
+        }
+        h1,p{
+            animation:myfirst 2s infinite;
+        }
     </style>
 </head>
-
 <body>
 <h1>静夜思</h1>
 <p>床前明月光,</p>
