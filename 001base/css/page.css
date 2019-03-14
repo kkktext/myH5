@@ -3,6 +3,19 @@ html,body,page{
     width: 100%;
     margin: 0;
 }
+#z{
+    font-size: 36px;
+    display: block;
+    animation: z 10s infinite;
+}
+
+@keyframes z {
+    0%{opacity: 0}
+    60%{opacity: 0}
+    80%{opacity: 100}
+    90%{opacity: 100}
+    100%{opacity: 0}
+}
 page{
     font-size: 180px;
     height: 100%;
@@ -19,6 +32,7 @@ page{
     animation: x 10s infinite;
 }
 #q{
+    background-image: url("../images/1.jpg");
     animation: q 10s infinite;
 }
 #d{
